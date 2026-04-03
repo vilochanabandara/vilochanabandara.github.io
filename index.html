@@ -4,110 +4,301 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vilochana Bandara | Portfolio</title>
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --bg-color: #f8f9fa;
-            --text-color: #333;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 1.2rem;
-            color: #bdc3c7;
-            margin-top: 10px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 2rem;
-        }
-        section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: var(--secondary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill-tag {
-            background: var(--secondary-color);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-        a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #7f8c8d;
-        }
-    </style>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Vilochana Bandara</h1>
-        <p>Computer Systems & Network Engineering | Cloud & DevOps Enthusiast</p>
-    </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi, I'm Vilochana. I'm currently in my final year at the Sri Lanka Institute of Information Technology (SLIIT), anticipating graduation in October 2026. I am passionate about building scalable infrastructure, automating workflows, and securing systems.</p>
-            <p>My focus lies bridging the gap between development and operations, with a strong emphasis on cloud architecture and cybersecurity.</p>
-        </section>
-
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills">
-                <span class="skill-tag">Linux / Unix</span>
-                <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Microsoft Azure</span>
-                <span class="skill-tag">DevOps Pipelines</span>
-                <span class="skill-tag">Cybersecurity Compliance</span>
-                <span class="skill-tag">IoT Architecture</span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">VB.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <ul>
-                <li>
-                    <strong>Wireless Sensor Network via ESP32:</strong> 
-                    Developing an IoT-based sensor
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content reveal">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Vilochana Bandara</span></h1>
+            <p class="hero-subtitle">Computer Systems & Network Engineering Undergraduate specializing in Cloud, DevOps, and Infrastructure Automation.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn primary-btn">Let's Connect</a>
+                <a href="#projects" class="btn outline-btn">View My Work</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/vilochanabandara" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:vilochanabandara@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/vilochanabandara" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="hero-image reveal-delay">
+            <div class="image-wrapper">
+                <img src="dp.png" alt="Vilochana Bandara" onerror="this.src='https://via.placeholder.com/400x400/1e293b/0ea5e9?text=VB'">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-header reveal">
+            <h2>About <span class="highlight">Me</span></h2>
+        </div>
+        <div class="about-content grid-layout reveal">
+            <div class="about-text glass-card">
+                <p>
+                    I am a Computer Systems and Network Engineering undergraduate with a strong foundation in infrastructure design, system monitoring, and automation. Proven experience in deploying enterprise-grade network solutions and configuring observability tools.
+                </p>
+                <p>
+                    Currently advancing my skills in Linux Administration and CI/CD workflows, actively seeking to leverage my expertise in cloud technologies (AWS, Azure) and scripting (Python, C) to optimize system reliability and deployment efficiency in a Cloud, DevOps, or Systems Engineering role.
+                </p>
+                <!-- Education snippet -->
+                <div class="education-snippet mt-4">
+                    <h3><i class="fas fa-graduation-cap highlight"></i> Education</h3>
+                    <div class="timeline-item">
+                        <h4>B.Sc. (Hons) Information Technology - Computer Systems & Network Engineering</h4>
+                        <p class="timeline-date">Sri Lanka Institute of Information Technology | Expected 2026</p>
+                        <p class="timeline-detail">GPA: 3.7 | Awards: Dean’s List, Full Scholarship (2023, 2026)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats glass-card">
+                <div class="stat">
+                    <h3>Cloud & CI/CD</h3>
+                    <p>Focus Areas</p>
+                </div>
+                <div class="stat">
+                    <h3>Python & C</h3>
+                    <p>Top Languages</p>
+                </div>
+                <div class="stat">
+                    <h3>2026</h3>
+                    <p>Expected Graduation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-header reveal">
+            <h2>Professional <span class="highlight">Experience</span></h2>
+        </div>
+        <div class="timeline reveal">
+            <div class="timeline-point">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-card">
+                    <h3>Intern - Network Solutions</h3>
+                    <h4>Millennium IT ESP</h4>
+                    <p class="date"><i class="far fa-calendar-alt"></i> June 2024 – June 2025</p>
+                    <ul>
+                        <li>Assisted in the deployment and configuration of complex network infrastructure for the Colombo West International Terminal (CWIT) project.</li>
+                        <li>Performed root-cause analysis on network outages and connectivity issues to ensure high availability of critical systems.</li>
+                        <li>Authored comprehensive technical documentation regarding network topology and device configurations to streamline future maintenance and audits.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="timeline-point">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content glass-card">
+                    <h3>Banking Trainee</h3>
+                    <h4>Bank of Ceylon</h4>
+                    <p class="date"><i class="far fa-calendar-alt"></i> February 2022 – August 2022</p>
+                    <ul>
+                        <li>Gained exposure to enterprise banking systems and operational workflows.</li>
+                        <li>Enhanced understanding of high-compliance, secure IT environments within the financial sector.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-header reveal">
+            <h2>Featured <span class="highlight">Projects</span></h2>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card glass-card reveal">
+                <div class="project-content">
+                    <h3>End-to-End DevOps CI/CD Pipeline</h3>
+                    <p>Implemented a robust CI/CD workflow triggered by GitHub commits utilizing Jenkins, Docker Buildx, and Ansible for automated testing and deployment.</p>
+                    <div class="tech-stack">
+                        <span>Jenkins</span><span>Docker</span><span>Ansible</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card glass-card reveal">
+                <div class="project-content">
+                    <h3>Colombo West International Terminal Network</h3>
+                    <p>Collaborated in designing and implementing the network backbone for CWIT, ensuring scalable, high-speed, and secure communications.</p>
+                    <div class="tech-stack">
+                        <span>Network Backbone</span><span>Routing/Switching</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card glass-card reveal">
+                <div class="project-content">
+                    <h3>Automated System Monitoring</h3>
+                    <p>Deployed a Nagios monitoring server on CentOS with custom alerts to proactively identify downtime and track network health.</p>
+                    <div class="tech-stack">
+                        <span>Nagios</span><span>CentOS</span><span>Bash</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card glass-card reveal">
+                <div class="project-content">
+                    <h3>P2P File Sharing System</h3>
+                    <p>Built a torrent-like application implementing concurrent file management and low-level networking protocols.</p>
+                    <div class="tech-stack">
+                        <span>C</span><span>Socket Programming</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="project-card glass-card reveal">
+                <div class="project-content">
+                    <h3>Linux Active Directory & IAM</h3>
+                    <p>Engineered centralized IAM using Samba 4 as AD DC on Linux, integrating Kerberos, DNS, and Zabbix monitoring.</p>
+                    <div class="tech-stack">
+                        <span>Linux</span><span>Samba 4</span><span>Zabbix</span>
+                    </div>
+                </div>
+            </div>
+             <!-- Project 6 -->
+             <div class="project-card glass-card reveal">
+                <div class="project-content">
+                    <h3>HelaBooking Microservices</h3>
+                    <p>Developed a scalable event management platform on Kubernetes featuring fully automated DevOps pipelines.</p>
+                    <div class="tech-stack">
+                        <span>Kubernetes</span><span>Microservices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-header reveal">
+            <h2>Technical <span class="highlight">Skills</span></h2>
+        </div>
+        <div class="skills-container grid-layout reveal">
+            <div class="skill-category glass-card">
+                <div class="category-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud & CI/CD</h3>
+                <div class="skill-tags">
+                    <span>AWS</span><span>Azure</span><span>OCI</span>
+                    <span>Jenkins</span><span>Ansible</span><span>Docker</span>
+                    <span>Kubernetes</span><span>Terraform</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <div class="category-icon"><i class="fas fa-terminal"></i></div>
+                <h3>OS & Scripting</h3>
+                <div class="skill-tags">
+                    <span>Linux (RHEL, Debian)</span><span>Python</span>
+                    <span>C</span><span>Bash Scripting</span>
+                </div>
+            </div>
+            <div class="skill-category glass-card">
+                <div class="category-icon"><i class="fas fa-network-wired"></i></div>
+                <h3>Networking & Monitoring</h3>
+                <div class="skill-tags">
+                    <span>TCP/IP</span><span>DNS</span><span>DHCP</span>
+                    <span>Active Directory</span><span>Nagios Core</span>
+                    <span>Zabbix</span><span>Wireshark</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certs & Leadership -->
+    <section class="certs" id="certs">
+        <div class="section-header reveal">
+            <h2>Certifications & <span class="highlight">Leadership</span></h2>
+        </div>
+        <div class="grid-layout reveal">
+            <div class="glass-card">
+                <h3><i class="fas fa-certificate highlight"></i> Certifications</h3>
+                <ul class="clean-list">
+                    <li><i class="fas fa-check-circle"></i> Linux System Administration and DevOps Training (WSO2)</li>
+                    <li><i class="fas fa-hourglass-half"></i> In Progress: Cisco CCNA (200-301)</li>
+                    <li><i class="fas fa-check-circle"></i> Oracle Cloud Infrastructure Foundations Associate</li>
+                    <li><i class="fas fa-check-circle"></i> (ISC)² – CC Course Completion</li>
+                    <li><i class="fas fa-check-circle"></i> 100 Days of DevOps - KodeKloud</li>
+                </ul>
+            </div>
+            <div class="glass-card">
+                <h3><i class="fas fa-users highlight"></i> Leadership</h3>
+                <ul class="clean-list">
+                    <li><i class="fas fa-star"></i> Committee Member: SLIIT CSNE Community (2024-2026)</li>
+                    <li><i class="fas fa-star"></i> Team Leader: AIESEC in SLIIT (2023-2024)</li>
+                    <li><i class="fas fa-star"></i> Chief Organizer: Drug Prevention Society (Ananda College)</li>
+                    <li><i class="fas fa-star"></i> Member: Quiz Club (Ananda College)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact">
+        <div class="footer-container reveal">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <p>I'm currently seeking roles in Cloud, DevOps, or Systems Engineering.</p>
+            <div class="contact-methods">
+                <a href="mailto:vilochanabandara@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> vilochanabandara@gmail.com
+                </a>
+                <a href="tel:+94704611185" class="contact-item">
+                    <i class="fas fa-phone"></i> +94 70 461 1185
+                </a>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i> Kaduwela, Sri Lanka
+                </div>
+            </div>
+            <div class="references mt-4">
+                <h3>References</h3>
+                <div class="refs-grid">
+                    <div class="ref-card glass-card">
+                        <h4>Ms. Shashika Lokuliyana</h4>
+                        <p>Senior Lecturer, SLIIT</p>
+                        <p class="ref-contact"><i class="fas fa-phone-alt"></i> +94702240237</p>
+                        <p class="ref-contact"><i class="fas fa-envelope"></i> shashika.l@sliit.lk</p>
+                    </div>
+                    <div class="ref-card glass-card">
+                        <h4>Mr. Shehan Marasinghe</h4>
+                        <p>Consultant - Network Solutions, MillenniumIT ESP</p>
+                        <p class="ref-contact"><i class="fas fa-phone-alt"></i> +94776248861</p>
+                        <p class="ref-contact"><i class="fas fa-envelope"></i> shehanm@mitesp.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Vilochana Bandara. Designed with technical excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
