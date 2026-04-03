@@ -13,7 +13,7 @@ In the world of **Cloud** and **DevOps**, things move fast. Whether it's spinnin
 I've realized that the best way to solidify my knowledge is to share it. Here's what you can expect from this blog:
 
 *   **Deep dives** into infrastructure automation.
-*   **Walkthroughs** on my latest projects (like the P2P file sharing system or HelaBooking).
+*   **Walkthroughs** on my latest projects.
 *   **Tips and tricks** for Linux administration and system monitoring.
 *   My thoughts on the evolving cloud ecosystem (AWS, Azure, OCI).
 
