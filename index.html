@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilochana Bandara | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f8f9fa;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vilochana Bandara</h1>
+        <p>Computer Systems & Network Engineering | Cloud & DevOps Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Vilochana. I'm currently in my final year at the Sri Lanka Institute of Information Technology (SLIIT), anticipating graduation in October 2026. I am passionate about building scalable infrastructure, automating workflows, and securing systems.</p>
+            <p>My focus lies bridging the gap between development and operations, with a strong emphasis on cloud architecture and cybersecurity.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Linux / Unix</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Microsoft Azure</span>
+                <span class="skill-tag">DevOps Pipelines</span>
+                <span class="skill-tag">Cybersecurity Compliance</span>
+                <span class="skill-tag">IoT Architecture</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <ul>
+                <li>
+                    <strong>Wireless Sensor Network via ESP32:</strong> 
+                    Developing an IoT-based sensor
