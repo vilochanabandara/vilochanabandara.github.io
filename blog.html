@@ -1,0 +1,33 @@
+---
+layout: default
+title: Blog
+---
+<section class="blog-index" style="padding-top: 8rem; min-height: 80vh;">
+    <div class="section-header reveal active">
+        <h2>My <span class="highlight">Blog</span></h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 0;">Thoughts, learnings, and technical deep-dives on Systems Engineering, Cloud Computing, and DevOps.</p>
+    </div>
+
+    <div class="projects-grid reveal-delay active" style="margin-top: 4rem;">
+        {% for post in site.posts %}
+        <a href="{{ post.url | relative_url }}" class="project-card glass-card">
+            <div class="project-content">
+                <h3 style="margin-top: 0;">{{ post.title }}</h3>
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">
+                    <i class="far fa-calendar-alt"></i> {{ post.date | date: "%B %d, %Y" }}
+                </p>
+                <p style="color: var(--text-main); margin-bottom: 1.5rem; flex-grow: 1;">
+                    {{ post.excerpt | strip_html | truncatewords: 25 }}
+                </p>
+                <div class="tech-stack">
+                    <span style="background: rgba(56, 189, 248, 0.2); color: var(--accent);">Read Post &rarr;</span>
+                </div>
+            </div>
+        </a>
+        {% else %}
+        <div class="glass-card" style="text-align: center; grid-column: 1 / -1;">
+            <h3 style="color: var(--text-muted);">No posts yet. Check back soon!</h3>
+        </div>
+        {% endfor %}
+    </div>
+</section>
